@@ -1,0 +1,512 @@
+@font-face {
+    font-family: "FiraGo";
+    src: url(assetes/FiraGO-Regular.ttf);
+}
+
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+#fnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1D1D;
+    color: white;
+    padding-left: 33px;
+    padding-right: 13px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    font-family: "FiraGo";
+    height: 44px;
+    font-size: 14px;
+}
+
+#fdiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#sdiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#arrow {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#GEO {
+    margin-right: 7px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+  }
+
+#dropdown-btn {
+    background-color: #1E1D1D;
+    font-family: "FiraGo";
+    font-size: 14px;
+    letter-spacing:0.2;
+    font-weight: 400;
+    color: white;
+    line-height: initial;
+    border: none;
+    border-right: 1px solid #acacac;
+    padding-right: 20px;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+#dropdown-btn:hover {
+    color: #2F64AD;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.ftext {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#ganvadeba {
+    letter-spacing: 0.2px;
+    border : 1px solid #acacac;
+    border-bottom: none;
+    border-top: none;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+#ganvadeba:hover {
+    color: #2F64AD;
+}
+
+#miwodeba {
+    letter-spacing: 0.2px;
+    border: 1px solid #acacac;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+
+#miwodeba:hover {
+    color: #2F64AD;
+}
+
+#mail-icon {
+    font-weight: 1;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+#phone-icon {
+    color: white;
+    font-size: 12px;
+}
+
+#infopcroom {
+    margin-left: 7px;
+}
+
+#tel {
+    margin-right: 0px;
+}
+
+header {
+    padding-left: 34px;
+    padding-right: 34px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #3A3939;
+    height: 126px;
+}
+
+header img {
+    width: 120px;
+}
+
+#right-header {
+    display: flex;
+    align-items: center;
+    font-family: "FiraGo";
+    gap: 34px;
+    margin-top: 5px;
+}
+
+.icon {
+    align-items: center;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-position: 100%;
+    background-image: url('assetes/top-icon.png');
+    transition: 0.3s ease;
+}
+
+.user {
+    background-position: 0 0;;
+}
+
+.icondiv:hover .user {
+    background-position: 0 -58px;
+}
+
+.cart {
+    background-position: 0 -113px;
+  }
+
+.icondiv:hover .cart {
+    background-position: 0 -170px;
+}
+
+.icondiv {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.icondiv a {
+    font-family: "FiraGo";
+    color: #8d8d8d;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+}
+
+.icondiv a:hover {
+    color: #2F61A6;
+}
+
+.icondiv div {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-div a {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+}
+
+#cart-div a:hover {
+    color: #2F61A6;
+}
+
+#search {
+    display: flex;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+#search-input {
+    font-family: "FiraGo";
+    padding : 10px 130px 10px 20px;
+    font-weight: 300;
+    border: 0;
+    font-size: 14px;
+    height: 25px;
+    width: 531px;
+    border-radius:  10px 0px 0px 10px;
+    background-color: white;
+}
+
+#search-input::placeholder {
+    font-size: 13px;
+    font-weight: 300;
+    color: #999992;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+#search-button {
+    font-family: "FiraGo";
+    background-color: #2F64AD;
+    border: 0;
+    color: white;
+    width: 99px;
+    border-radius: 0px 10px 10px 0px;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#search-button:hover {
+color : black;
+}
+
+#under-header {
+    display: flex;
+    gap: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#under-header i{
+    color: white;
+    font-size: 16px;
+}
+
+#categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2F64AD;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 251px;
+    border-radius: 0 0 15px 15px;
+    margin-left: 35px;
+    color: white;
+    font-family: "FiraGO";
+}
+
+#menu {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    gap: 29px;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom:1px solid rgb(146, 146, 146);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+}
+
+#menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: "FiraGo";
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    height: 100%;
+}
+
+#menu a:hover {
+    color: #2F64AD;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#slider-container {
+    display: flex;
+    max-width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+#slider {
+    display: flex;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "FiraGo";
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#controls button img {
+    height: 80px;
+    width: 60px;
+}
+
+#controls {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#price {
+    font-size: 18px;
+    color: #FF5F81;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    background-color: #262626;
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "FiraGo";
+    letter-spacing: 0.7px;
+    justify-content: space-evenly;
+    height: 470px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+/* პირველი ყუთი Footer_ში */
+
+#footer-col-1 {
+    border-right: 1px solid #333333;
+    padding-top: 50px;
+    padding-right: 15px;
+}
+
+#footer-col-1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#footer-col-1-1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer-col-1-1 img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+#footer-col-1-2 img {
+    max-height: 32px;
+}
+
+#footer-col-1-2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid #333333;
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 330px;
+}
+
+#footer-col-1-2-1 img{
+    border-radius: 5px;
+}
+
+#footer-col-1-2-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h5 {
+    color: #2f64ad;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* მეორე ყუთი Footer_ში */
+#footer-col-2 {
+    border-right: 1px solid #333333;
+    padding-top: 30px;
+    padding-right: 15px;
+    max-width: 320px;
+}
+
+#footer-col-2 a {
+    color: white;
+    text-decoration: none;
+    line-height: 35px;
+    transition:  0.6s;
+}
+
+#footer-col-2-div2{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#footer-col-2-div1{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#footer-col-2-div1 a:hover {
+    color: #2f64ad;
+}
+#footer-col-2-div2 a:hover {
+    color: #2f64ad;
+}
+
+/* მესამე ყუთი Footer_ში */
+
+#footer-col-3 {
+    border-right: 1px solid #333333;
+    padding-top: 30px;
+    padding-right: 15px;
+    max-width: 320px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+
+#footer-col-3-div2 {
+    margin-bottom: 40px;
+}
+
+/* მეოთხე ყუთი Footer_ში */
