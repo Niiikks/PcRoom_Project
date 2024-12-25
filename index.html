@@ -15,10 +15,10 @@
             <span id="infopcroom"><i class="fa fa-envelope-o" aria-hidden="true" id="mail-icon"></i>Info@Pcroom.Ge</span>
         </div>
         <div id="sdiv">
-            <a href="" class="ftext" id="ganvadeba">ონლაინ განვადება</a>
+            <a href="https://www.youtube.com/" class="ftext" id="ganvadeba">ონლაინ განვადება</a>
             <a href="" class="ftext" id="miwodeba">მიწოდება</a>
             <div class="dropdown">
-                <button type="button" id="dropdown-btn">
+                <button type="button" id="dropdown-btn" onclick="start()">
                     <img src="assetes/ge-ka.png" alt="GEO" id="GEO">GEO
                     <i class="fa fa-angle-down" id="arrow"></i></button>
                 <div class="dropdown-content">
@@ -28,8 +28,8 @@
             </div>
         </div>
     </nav>
-    <header>
-        <a href=""><img src="assetes/logo-on-black.png" alt=""></a>
+    <header id="desktop-header">
+        <a href=""><img src="assetes/logo-on-black.png" alt="" id="PcRoom-logo"></a>
         <div id="right-header">
             <div id="search">
                 <input type="text" placeholder="რას ეძებთ?" name="" id="search-input">
@@ -49,6 +49,17 @@
             </div>
         </div>
     </header>
+    <!-- ===================================================== ტელეფონის header ================================================= -->
+    <header id="phone-header">
+        <div id="phone-menu"></div>
+        <div class="icondiv"><span class="icon user"></span>
+            <div id="user-div">
+                <a href="">ავტორიზაცია</a>
+                <a href="">რეგისტრაცია</a>
+            </div>
+        </div>
+        <div><i class="fa-solid fa-magnifying-glass" id=""></i></div>
+    </header>
     <div id="under-header">
         <div id="categories">კატეგორიები <i class="fa fa-angle-down" ></i></div>
         <div id="menu">
@@ -59,6 +70,7 @@
             <a href="">კონტაქტი</a>
         </div>
     </div>
+    <div id="banner"><img src="assetes/ny-pc-669773-7680-1256x540.jpg" alt=""></div>
     <section>
         <div id="slider-container">
             <div id="slider">
@@ -95,7 +107,7 @@
         </div>
     </section>
     <footer>
-        <div id="footer-col-1">
+        <div id="footer-col-1" class="footer-div">
             <div id="footer-col-1-1">
                 <img src="assetes/logo-on-black.png" alt="" srcset="">
                 <div id="footer-col-1-text">17 წელი თქვენს გვერდით
@@ -114,9 +126,9 @@
                 <a href=""><img src="assetes/count222.gif" alt="" srcset=""></a>
             </div>
         </div>
-        <div id="footer-col-2">
+        <div id="footer-col-2" class="footer-div">
             <h5>ჩვენი ფილიალები</h5>
-            <div id="footer-col-2-div1">
+            <div id="footer-col-2-div1" class="footer-content">
                 <a href="">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                      დიდი დიღომი, მირიან მეფის #20 
@@ -126,7 +138,7 @@
                 </div>
                 </a>
             </div>
-            <div id="footer-col-2-div2">
+            <div id="footer-col-2-div2" class="footer-content">
                 <a href="">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                     ავლაბარი, ქეთევან წამებულის #2  
@@ -137,27 +149,27 @@
                 </a>
             </div>
         </div>
-        <div id="footer-col-3">
+        <div id="footer-col-3" class="footer-div">
             <h5>კონტაქტი</h5>
-            <div><i class="fa fa-mobile" aria-hidden="true" style="padding-left:3px; font-size:18px;"></i>
+            <div class="footer-content"><i class="fa fa-mobile" aria-hidden="true" style="padding-left:3px; font-size:18px;"></i>
                 596 885 585
             </div>
-            <div id="footer-col-3-div2">
+            <div id="footer-col-3-div2" class="footer-content">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 0322 111 800
             </div>
-            <div>
+            <div class="footer-content">
                 <i class="fa fa-mobile" aria-hidden="true" style="padding-left:3px; font-size:18px;"></i>
                 596 885 585
             </div>
-            <div>
+            <div class="footer-content"> 
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 info@Pcroom.Ge
             </div>
         </div>
-        <div id="footer-col-4">
+        <div id="footer-col-4" class="footer-div">
             <h5>საინფორმაციო</h5>
-            <ul>
+            <ul class="footer-content">
                 <li>ჩვენს შესახებ</li>
                 <li>საგარანტიო პირობები</li>
                 <li>მიწოდების პირობები</li>
@@ -165,9 +177,9 @@
                 <li>კონფიდენციალურობა</li>
             </ul>
         </div>
-        <div id="footer-col-5">
+        <div id="footer-col-5" class="footer-div">
             <h5>დამატებით</h5>
-            <ul>
+            <ul class="footer-content">
                 <li>ვაკანსიები</li>
                 <li>ბრენდები</li>
                 <li>სიახლეები</li>
