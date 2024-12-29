@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Room • პისი რუმი</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ანგარიშის რეგისტრაცია</title>
+    <link rel="stylesheet" href="registration.css">
     <link rel="icon" href="assetes/logo-on-black.png">
     <script src="https://kit.fontawesome.com/c36c3eebf5.js" crossorigin="anonymous"></script>
 </head>
@@ -39,7 +39,7 @@
             <div class="icondiv"><span class="icon user"></span>
                 <div id="user-div">
                     <a href="" data-i18n="authorization">ავტორიზაცია</a>
-                    <a href="registration.html" data-i18n="registration">რეგისტრაცია</a>
+                    <a href="" data-i18n="registration">რეგისტრაცია</a>
                 </div>
             </div>
             <div class="icondiv"><span class="icon cart"></span>
@@ -71,42 +71,61 @@
             <a href="" data-i18n="contact">კონტაქტი</a>
         </div>
     </div>
-    <div id="banner"><img src="assetes/ny-pc-669773-7680-1256x540.jpg" alt=""></div>
-    <section>
-        <div id="slider-container">
-            <div id="slider">
-                <div class="slide">
-                    <img src="assetes/1-8535-35-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/1-910644-5765-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/2-2821-47-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/2-308454-3938-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/p1659_0-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
-                </div>
-            </div>
+    <div id="main">
+        <ul>
+            <li><i class="fa fa-home"></i></li>
+            <li>ანგარიში</li>
+            <li id="doted"></li>
+            <li>რეგისტრაცია</li>
+        </ul>
+    </div>
+    <form>
+        <div id="acc-reg">
+            ანგარიშის რეგისტრაცია
+            <span>თუ უკვე ხართ რეგისტრირებული, გთხოვთ, გაიაროთ <a href="">ავტორიზაცია.</a></span>
         </div>
-        <div id="controls">
-            <button id="prev" type="button" class="btn"><img src="assetes/back.png" alt=""></button>
-            <button id="next" type="button" class="btn"><img src="assetes/next.png" alt=""></button>
+        <div class="topics">
+            თქვენი პირადი მონაცემები
         </div>
-    </section>
+        <div class="form">
+            <label for="name" data-i18n="name">სახელი</label>
+            <input type="text" placeholder="სახელი">
+        </div>
+        <div class="form">
+            <label for="gmail" data-i18n="gmail">ელ-ფოსტა</label>
+            <input type="text" placeholder="ელ-ფოსტა">
+        </div>
+        <div class="form">
+            <label for="country" data-i18n="country">ქვეყანა</label>
+            <input type="text" placeholder="ქვეყანა">
+        </div>
+        <div class="form">
+            <label for="country" data-i18n="country">ქალაქი</label>
+            <input type="text" placeholder="ქალაქი">
+        </div>
+        <div class="form">
+            <label for="phone" data-i18n="phone">მობილურის ნომერი</label>
+            <input type="text" placeholder="მობილურის ნომერი">
+        </div>
+        <div class="form">
+            <label for="registration-date" data-i18n="registration-date">რეგისტრაციის თარიღი</label>
+            <input type="date">
+        </div>
+        <div class="topics">
+            თქვენი პაროლი
+        </div>
+        <div class="form">
+            <label for="password" data-i18n="password">პაროლი</label>
+            <input type="password" placeholder="პაროლი">
+        </div>
+        <div class="form">
+            <label for="confirm-password" data-i18n="confirm-password">დაადასტურე პაროლი</label>
+            <input type="password" placeholder="დაადასტურე პაროლი">
+        </div>
+        <div id="but">
+        <button type="submit">გაგრძელება</button>
+        </div>
+    </form>
     <footer>
         <div id="footer-col-1" class="footer-div">
             <div id="footer-col-1-1">
@@ -188,9 +207,8 @@
                 <li data-i18n="report-error">შეცდომის დაფიქსირება</li>
             </ul>
         </div>
-    </footer>
     <script src="dropdown.js"></script>
     <script src="translate.js"></script>
-    <script src="script.js"></script>
+    </footer>
 </body>
 </html>

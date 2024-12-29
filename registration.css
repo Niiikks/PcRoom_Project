@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -146,8 +146,8 @@ body {
 }
 
 #desktop-header {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 34px;
+    padding-right: 34px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -283,6 +283,7 @@ color : black;
     position: sticky;
     top: 0px;
     z-index: 1;
+    background-color: #F5F5F5;
 }
 
 #under-header i{
@@ -336,66 +337,6 @@ color : black;
 
 #menu a:hover {
     color: #2F64AD;
-}
-
-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-#slider-container {
-    display: flex;
-    max-width: 500px;
-    height: 500px;
-    overflow: hidden;
-    margin-bottom: 30px;
-}
-
-
-#slider {
-    display: flex;
-}
-
-.slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "FiraGo";
-    font-size: 15px;
-    background-color: white;
-    border-radius: 10px;
-    height: 500px;
-    width: 500px;
-    transition: transform 0.5s ease-in-out;
-}
-
-.btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-#controls button img {
-    height: 80px;
-    width: 60px;
-}
-
-#controls {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    width: 610px;
-}
-
-#price {
-    font-size: 18px;
-    color: #FF5F81;
-    font-weight: 700;
-    margin-top: 50px;
 }
 
 footer {
@@ -577,6 +518,126 @@ li:hover {
     border-radius: 15px;
 }
 
+/* ფორმა */
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'FiraGo';
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    color: #808080;
+    margin: 15px 60px 15px 60px;
+}
+
+form div {
+    display: flex;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+form input {
+    width: 83.3%;
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    height: 28px;
+    padding: 6px 12px;
+    font-family: 'FiraGo';
+    font-weight: 400;
+}
+
+input:focus {
+    outline : none;
+}
+
+form label {
+    font-size: 14px;
+    width: 200px;
+    color: #262626;
+}
+
+label::before {
+    content: '*';
+    color: #F00;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.topics {
+    display: flex;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 18px;
+    padding:7px 0px;
+    color: #0C0C0C;
+}
+
+#acc-reg {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #0C0C0C;
+    font-weight: bold;
+}
+
+#acc-reg span {
+    color: #808080;
+    font-size: 13px;
+    margin: 25px 0px 0px 0px;
+    font-weight: 200;
+}
+
+#acc-reg a{
+    color: #0C0C0C;
+    text-decoration: none;
+}   
+
+#main {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #acacac;
+    padding: 5px 0px;
+}
+
+#main ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'FiraGo';
+    font-size: 15px;
+    gap: 5px;
+}
+
+#main ul li:hover {
+    text-decoration: underline;
+    transition: 0s;
+}
+
+#doted {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#but {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#but button {
+    cursor: pointer;
+    padding: 12px 30px;
+    font-family: 'FiraGo';
+    background-color: #2F64AD;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+}
+
 @media (max-width : 1300px) {
     #search-input {
         max-width: 300px;
@@ -584,9 +645,6 @@ li:hover {
 }
 
 @media (max-width : 1070px) {
-    #desktop-header {
-        padding-left: 30px;
-    }
     #search-input {
         max-width: 250px;
         margin-left: 15px;
@@ -656,7 +714,7 @@ li:hover {
     #desktop-header {
         align-items: start;
         height: 135px;
-        padding: 20px 50px 20px 20px;
+        padding: 20px 50px 20px 50px;
     }
     #fdiv {
         display: none;
