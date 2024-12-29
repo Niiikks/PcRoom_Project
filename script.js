@@ -33,7 +33,8 @@ nextButton.addEventListener('click', () => {
 })
 
 // dropdown button
-let p = 50;
+let display = 'none';
+let p = 0;
 let int;
 function daxurva(){
     let container = document.querySelector('.dropdown-content');
@@ -45,11 +46,13 @@ function daxurva(){
     if(p <= 0) {
         clearInterval(int);
         container.style.display = 'none';
+        display = 'none';
     }
 }
 function gaxsna(){
     let container = document.querySelector('.dropdown-content');
     container.style.display = 'block';
+    display = 'block';
     p += 3;
     container.style.height = `${p}px`;
     if(p >= 10) {
@@ -63,7 +66,7 @@ function gaxsna(){
 
 
 function start() {
-    if(p<=0) {
+    if(display === 'none') {
         int = setInterval(gaxsna, 1);
     }
     else {

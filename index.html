@@ -11,19 +11,19 @@
     <nav id="fnav">
         <div id="fdiv">
             <i class="fa-solid fa-phone" id="phone-icon"></i>
-            <span id="tel">+995 555 888 884</span>
-            <span id="infopcroom"><i class="fa fa-envelope-o" aria-hidden="true" id="mail-icon"></i>Info@Pcroom.Ge</span>
+            <span id="tel" data-i18n="phone-number">+995 555 888 884</span>
+            <span id="infopcroom"><i class="fa fa-envelope-o" aria-hidden="true" id="mail-icon"></i><span data-i18n="email">Info@Pcroom.Ge</span></span>
         </div>
         <div id="sdiv">
-            <a href="https://www.youtube.com/" class="ftext" id="ganvadeba">ონლაინ განვადება</a>
-            <a href="" class="ftext" id="miwodeba">მიწოდება</a>
+            <a href="https://www.youtube.com/" class="ftext" id="ganvadeba" data-i18n="online-financing">ონლაინ განვადება</a>
+            <a href="" class="ftext" id="miwodeba" data-i18n="delivery">მიწოდება</a>
             <div class="dropdown">
                 <button type="button" id="dropdown-btn" onclick="start()">
-                    <img src="assetes/ge-ka.png" alt="GEO" id="GEO">GEO
+                    <img src="assetes/ge-ka.png" alt="GEO" id="GEO"><span data-i18n="lang">GEO</span>
                     <i class="fa fa-angle-down" id="arrow"></i></button>
                 <div class="dropdown-content">
-                    <div class="dropdown-item">GEO</div>
-                    <div class="dropdown-item">ENG</div>
+                    <div class="dropdown-item" onclick="switchLanguage('geo')" data-i18n="geo">GEO</div>
+                    <div class="dropdown-item" onclick="switchLanguage('eng')" data-i18n="eng">ENG</div>
                 </div>
             </div>
         </div>
@@ -32,13 +32,13 @@
         <a href=""><img src="assetes/logo-on-black.png" alt="" id="PcRoom-logo"></a>
         <div id="right-header">
             <div id="search">
-                <input type="text" placeholder="რას ეძებთ?" name="" id="search-input">
-                <button type="button" id="search-button">ძებნა</button>
+                <input type="text" placeholder="რას ეძებთ?" name="" id="search-input" data-i18n="search-placeholder">
+                <button type="button" id="search-button" data-i18n="search">ძებნა</button>
             </div>
             <div class="icondiv"><span class="icon user"></span>
                 <div id="user-div">
-                    <a href="">ავტორიზაცია</a>
-                    <a href="">რეგისტრაცია</a>
+                    <a href="" data-i18n="authorization">ავტორიზაცია</a>
+                    <a href="" data-i18n="registration">რეგისტრაცია</a>
                 </div>
             </div>
             <div class="icondiv"><span class="icon cart"></span>
@@ -54,20 +54,20 @@
         <div id="phone-menu"></div>
         <div class="icondiv"><span class="icon user"></span>
             <div id="user-div">
-                <a href="">ავტორიზაცია</a>
-                <a href="">რეგისტრაცია</a>
+                <a href="" data-i18n="authorization">ავტორიზაცია</a>
+                <a href="" data-i18n="registration">რეგისტრაცია</a>
             </div>
         </div>
         <div><i class="fa-solid fa-magnifying-glass" id=""></i></div>
     </header>
     <div id="under-header">
-        <div id="categories">კატეგორიები <i class="fa fa-angle-down" ></i></div>
+        <div id="categories"><span data-i18n="categories">კატეგორიები</span><i class="fa fa-angle-down" ></i></div>
         <div id="menu">
-            <a href="">მთავარი</a>
-            <a href="">ფასდაკლებები</a>
-            <a href="">ძირითადი ინფორმაცია</a>
-            <a href="">სერვისები</a>
-            <a href="">კონტაქტი</a>
+            <a href="" data-i18n="home">მთავარი</a>
+            <a href="" data-i18n="discounts">ფასდაკლებები</a>
+            <a href="" data-i18n="about-us">ძირითადი ინფორმაცია</a>
+            <a href="" data-i18n="services">სერვისები</a>
+            <a href="" data-i18n="contact">კონტაქტი</a>
         </div>
     </div>
     <div id="banner"><img src="assetes/ny-pc-669773-7680-1256x540.jpg" alt=""></div>
@@ -76,27 +76,27 @@
             <div id="slider">
                 <div class="slide">
                     <img src="assetes/1-8535-35-256x256.png" alt="" srcset="">
-                    <div id="description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
+                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
                     <div id="price">68,0ლ</div>
                 </div>
                 <div class="slide">
                     <img src="assetes/1-910644-5765-256x256.png" alt="" srcset="">
-                    <div id="description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
+                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
                     <div id="price">68,0ლ</div>
                 </div>
                 <div class="slide">
                     <img src="assetes/2-2821-47-256x256.png" alt="" srcset="">
-                    <div id="description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
+                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
                     <div id="price">68,0ლ</div>
                 </div>
                 <div class="slide">
                     <img src="assetes/2-308454-3938-256x256.png" alt="" srcset="">
-                    <div id="description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
+                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
                     <div id="price">68,0ლ</div>
                 </div>
                 <div class="slide">
                     <img src="assetes/p1659_0-256x256.png" alt="" srcset="">
-                    <div id="description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
+                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
                     <div id="price">68,0ლ</div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
         <div id="footer-col-1" class="footer-div">
             <div id="footer-col-1-1">
                 <img src="assetes/logo-on-black.png" alt="" srcset="">
-                <div id="footer-col-1-text">17 წელი თქვენს გვერდით
+                <div id="footer-col-1-text" data-i18n="footer-text">17 წელი თქვენს გვერდით
                     <div>Pc Room საუკეთესოა!</div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
             </div>
         </div>
         <div id="footer-col-2" class="footer-div">
-            <h5>ჩვენი ფილიალები</h5>
+            <h5 data-i18n="branches">ჩვენი ფილიალები</h5>
             <div id="footer-col-2-div1" class="footer-content">
                 <a href="">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -150,7 +150,7 @@
             </div>
         </div>
         <div id="footer-col-3" class="footer-div">
-            <h5>კონტაქტი</h5>
+            <h5 data-i18n="contact">კონტაქტი</h5>
             <div class="footer-content"><i class="fa fa-mobile" aria-hidden="true" style="padding-left:3px; font-size:18px;"></i>
                 596 885 585
             </div>
@@ -168,26 +168,27 @@
             </div>
         </div>
         <div id="footer-col-4" class="footer-div">
-            <h5>საინფორმაციო</h5>
+            <h5 data-i18n="info">საინფორმაციო</h5>
             <ul class="footer-content">
-                <li>ჩვენს შესახებ</li>
-                <li>საგარანტიო პირობები</li>
-                <li>მიწოდების პირობები</li>
-                <li>დაბრუნების პირობები</li>
-                <li>კონფიდენციალურობა</li>
+                <li data-i18n="about-us">ჩვენს შესახებ</li>
+                <li data-i18n="warranty-conditions">საგარანტიო პირობები</li>
+                <li data-i18n="delivery-conditions">მიწოდების პირობები</li>
+                <li data-i18n="return-conditions">დაბრუნების პირობები</li>
+                <li data-i18n="privacy-policy">კონფიდენციალურობა</li>
             </ul>
         </div>
         <div id="footer-col-5" class="footer-div">
-            <h5>დამატებით</h5>
+            <h5 data-i18n="more">დამატებით</h5>
             <ul class="footer-content">
-                <li>ვაკანსიები</li>
-                <li>ბრენდები</li>
-                <li>სიახლეები</li>
-                <li>როგორ ვიყიდო საიტზე</li>
-                <li>შეცდომის დაფიქსირება</li>
+                <li data-i18n="vacancies">ვაკანსიები</li>
+                <li data-i18n="brands">ბრენდები</li>
+                <li data-i18n="news">სიახლეები</li>
+                <li data-i18n="how-to-buy">როგორ ვიყიდო საიტზე</li>
+                <li data-i18n="report-error">შეცდომის დაფიქსირება</li>
             </ul>
         </div>
     </footer>
+    <script src="translate.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
