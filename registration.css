@@ -574,7 +574,7 @@ label::before {
     color: #0C0C0C;
 }
 
-#acc-reg {
+.acc-reg {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -582,14 +582,14 @@ label::before {
     font-weight: bold;
 }
 
-#acc-reg span {
+.acc-reg span {
     color: #808080;
     font-size: 13px;
     margin: 25px 0px 0px 0px;
     font-weight: 200;
 }
 
-#acc-reg a{
+.acc-reg a{
     color: #0C0C0C;
     text-decoration: none;
 }   
@@ -636,6 +636,20 @@ label::before {
     color: white;
     font-size: 13px;
     letter-spacing: 0.4px;
+}
+
+
+#error-fill, #match-pwd, #error-div, #phone-err {
+    display: none;
+    color: red;
+    font-size: 14px;
+    padding-left: 15%;
+}
+
+#check-pwd {
+    display: none;
+    font-size: 14px;
+    padding-left: 15%;
 }
 
 @media (max-width : 1300px) {

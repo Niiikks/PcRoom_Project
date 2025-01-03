@@ -577,15 +577,54 @@ li:hover {
     border-radius: 15px;
 }
 
+#add-cart{margin-top: 10px;
+    font-family: 'FiraGo';
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    height: 35px;
+    width: 80px;
+    background-color: #2F64AD;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+#clean {
+    font-family: 'FiraGo';
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 90px;
+    background-color: #2F64AD;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width : 1350px) {
+    #search-input {
+        width: 490px;
+    } 
+}
+
 @media (max-width : 1300px) {
     #search-input {
         max-width: 300px;
     }
+    #desktop-header {
+        padding: 0 40px;
+    }
 }
 
-@media (max-width : 1070px) {
+@media (max-width : 1112px) {
+    #right-header {
+        gap: 23px;
+    }
     #desktop-header {
-        padding-left: 30px;
+        padding-left: 10px;
     }
     #search-input {
         max-width: 250px;
@@ -653,6 +692,10 @@ li:hover {
 }
 
 @media (max-width : 990px) {
+    #clean {
+        margin-top: 50px;
+        margin-left: 84%;
+    }
     #desktop-header {
         align-items: start;
         height: 135px;
@@ -747,6 +790,9 @@ li:hover {
 }
 
 @media (max-width : 811px) {
+    #clean {
+        margin-left: 50%;
+    }
     #PcRoom-logo {
         display: none;
     }

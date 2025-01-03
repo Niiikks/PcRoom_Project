@@ -42,13 +42,14 @@
                     <a href="registration.html" data-i18n="registration">რეგისტრაცია</a>
                 </div>
             </div>
-            <div class="icondiv"><span class="icon cart"></span>
+            <div class="icondiv" id="cart-container"><span class="icon cart"></span>
                 <div id="cart-div">
-                    <a href="">0ც</a>
-                    <a href="">0.00ლ</a>
+                    <a href=""><span id="product">0</span> <span data-i18n="piece">ც</span></a>
+                    <a href="" ><span id="sum">0.00</span> <span data-i18n="gel">ლ</span></a>
                 </div>
             </div>
         </div>
+        <button id="clean">გასუფთავება</button>
     </header>
     <!-- ===================================================== ტელეფონის header ================================================= -->
     <header id="phone-header">
@@ -78,27 +79,27 @@
                 <div class="slide">
                     <img src="assetes/1-8535-35-256x256.png" alt="" srcset="">
                     <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
+                    <div id="price">50.0 <span data-i18n="gel">ლ</span></div>
                 </div>
                 <div class="slide">
                     <img src="assetes/1-910644-5765-256x256.png" alt="" srcset="">
                     <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
+                    <div id="price">68.0 <span data-i18n="gel">ლ</span></div>
                 </div>
                 <div class="slide">
                     <img src="assetes/2-2821-47-256x256.png" alt="" srcset="">
                     <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
+                    <div id="price">100.0 <span data-i18n="gel">ლ</span></div>
                 </div>
                 <div class="slide">
                     <img src="assetes/2-308454-3938-256x256.png" alt="" srcset="">
                     <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
+                    <div id="price">17.50 <span data-i18n="gel">ლ</span></div>
                 </div>
                 <div class="slide">
                     <img src="assetes/p1659_0-256x256.png" alt="" srcset="">
                     <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68,0ლ</div>
+                    <div id="price">150.50 <span data-i18n="gel">ლ</span></div>
                 </div>
             </div>
         </div>
@@ -189,8 +190,9 @@
             </ul>
         </div>
     </footer>
-    <script src="dropdown.js"></script>
     <script src="translate.js"></script>
+    <script src="dropdown.js"></script>
     <script src="script.js"></script>
+    <script src="addFunction.js"></script>
 </body>
 </html>

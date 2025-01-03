@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ანგარიშის რეგისტრაცია</title>
+    <title data-i18n="acc-reg">ანგარიშის რეგისტრაცია</title>
     <link rel="stylesheet" href="registration.css">
     <link rel="icon" href="assetes/logo-on-black.png">
     <script src="https://kit.fontawesome.com/c36c3eebf5.js" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
             <a href="" class="ftext" id="miwodeba" data-i18n="delivery">მიწოდება</a>
             <div class="dropdown">
                 <button type="button" id="dropdown-btn" onclick="start()">
-                    <img src="assetes/ge-ka.png" alt="GEO" id="GEO"><span data-i18n="lang">GEO</span>
+                    <img src="assetes/ge-ka.png" alt="GEO" id="GEO"><span data-i18n="lang" id="lang">GEO</span>
                     <i class="fa fa-angle-down" id="arrow"></i></button>
                 <div class="dropdown-content">
                     <div class="dropdown-item" onclick="switchLanguage('geo')" data-i18n="geo">GEO</div>
@@ -44,8 +44,8 @@
             </div>
             <div class="icondiv"><span class="icon cart"></span>
                 <div id="cart-div">
-                    <a href="">0ც</a>
-                    <a href="">0.00ლ</a>
+                    <a href=""><span id="product">0</span> <span data-i18n="piece">ც</span></a>
+                    <a href="" ><span id="sum">0.00</span> <span data-i18n="gel">ლ</span></a>
                 </div>
             </div>
         </div>
@@ -74,56 +74,61 @@
     <div id="main">
         <ul>
             <li><i class="fa fa-home"></i></li>
-            <li>ანგარიში</li>
+            <li data-i18n="account">ანგარიში</li>
             <li id="doted"></li>
-            <li>რეგისტრაცია</li>
+            <li data-i18n="registration">რეგისტრაცია</li>
         </ul>
     </div>
     <form>
-        <div id="acc-reg">
-            ანგარიშის რეგისტრაცია
-            <span>თუ უკვე ხართ რეგისტრირებული, გთხოვთ, გაიაროთ <a href="">ავტორიზაცია.</a></span>
+        <div class="acc-reg">
+            <div class="acc-reg" data-i18n="acc-reg">ანგარიშის რეგისტრაცია</div>
+            <span data-i18n="if-reg">თუ უკვე ხართ რეგისტრირებული, გთხოვთ, გაიაროთ <a href="">ავტორიზაცია.</a></span>
         </div>
-        <div class="topics">
+        <div class="topics" data-i18n="personal-info">
             თქვენი პირადი მონაცემები
         </div>
         <div class="form">
             <label for="name" data-i18n="name">სახელი</label>
-            <input type="text" placeholder="სახელი">
+            <input type="text" data-i18n="name" placeholder="სახელი">
         </div>
         <div class="form">
-            <label for="gmail" data-i18n="gmail">ელ-ფოსტა</label>
-            <input type="text" placeholder="ელ-ფოსტა">
+            <label for="gmail" data-i18n="gmail" >ელ-ფოსტა</label>
+            <input type="text" data-i18n="gmail" placeholder="ელ-ფოსტა" id="gmail">
         </div>
+        <div id="error-div" data-i18n="error-div">გთხოვთ შეიყვანეთ ვალიდური ელ-ფოსტა.</div>
         <div class="form">
             <label for="country" data-i18n="country">ქვეყანა</label>
-            <input type="text" placeholder="ქვეყანა">
+            <input type="text" data-i18n="country" placeholder="ქვეყანა">
         </div>
         <div class="form">
-            <label for="country" data-i18n="country">ქალაქი</label>
-            <input type="text" placeholder="ქალაქი">
+            <label for="city" data-i18n="city">ქალაქი</label>
+            <input type="text" data-i18n="city" placeholder="ქალაქი">
         </div>
         <div class="form">
             <label for="phone" data-i18n="phone">მობილურის ნომერი</label>
-            <input type="text" placeholder="მობილურის ნომერი">
+            <input type="text" data-i18n="phone" placeholder="მობილურის ნომერი" id="phone">
         </div>
+        <div id="phone-err" data-i18n="phone-err">მობილურის ნომერი უნდა შეიცავდეს მხოლოდ 9 ციფრს და არცერთ space_ს</div>
         <div class="form">
             <label for="registration-date" data-i18n="registration-date">რეგისტრაციის თარიღი</label>
             <input type="date">
         </div>
-        <div class="topics">
+        <div class="topics" data-i18n="your-password">
             თქვენი პაროლი
         </div>
         <div class="form">
             <label for="password" data-i18n="password">პაროლი</label>
-            <input type="password" placeholder="პაროლი">
+            <input type="password" data-i18n="password" placeholder="პაროლი" id="password">
         </div>
+        <div id="check-pwd"></div>
         <div class="form">
             <label for="confirm-password" data-i18n="confirm-password">დაადასტურე პაროლი</label>
-            <input type="password" placeholder="დაადასტურე პაროლი">
+            <input type="password" data-i18n="confirm-password" placeholder="დაადასტურე პაროლი" id="confirm-password">
         </div>
+        <div id="match-pwd" data-i18n="match-pwd">პაროლი არ ემთხვევა</div>
+        <div id="error-fill" data-i18n="error-fill">გთხოვთ შეავსოთ ყველა ველი</div>
         <div id="but">
-        <button type="submit">გაგრძელება</button>
+        <button type="button" data-i18n="continue" id="btn">გაგრძელება</button>
         </div>
     </form>
     <footer>
@@ -209,6 +214,8 @@
         </div>
     <script src="dropdown.js"></script>
     <script src="translate.js"></script>
+    <script src="reg_validation.js"></script>
+    <script src="cartDisplay.js"></script>
     </footer>
 </body>
 </html>

@@ -31,3 +31,4 @@ nextButton.addEventListener('click', () => {
     updateSlider();
     interval = setInterval(autoSlide, 3000);
 })
+
