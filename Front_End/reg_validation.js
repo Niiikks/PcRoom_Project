@@ -56,7 +56,7 @@ document.getElementById('btn').addEventListener('click', (event) => {
     }
 
 
-    alert('რეგისტრაცია წარმატებით დასრულდა');
+    register();
 })
 
 // პაროლის სიძლიერე
@@ -102,3 +102,33 @@ document.getElementById('password').addEventListener('input', (e)=> {
         checkPwd.style.display = 'none';
     }
 })
+
+
+async function register() {
+    const response = await fetch("http://localhost:3500/register", {
+        method : "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body : JSON.stringify({
+            name : document.getElementById('name').value,
+            mail : document.getElementById('gmail').value,
+            date : document.getElementById('date').value,
+            country : document.getElementById('country').value,
+            city : document.getElementById('city').value,
+            phone : document.getElementById('phone').value,
+            password : document.getElementById('password').value
+        })
+    })
+
+    const data = await response.json()
+    console.log(data);
+
+    if (!response.ok) {
+        console.error("Error fetching data:", response.status);
+        return;
+    }
+
+    window.location.href= "http://localhost:3500/loginPage";
+
+}

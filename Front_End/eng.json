@@ -47,5 +47,12 @@
     "match-pwd" : "password doesn's match",
     "error-fill" : "Please fill in all fields",
     "gel" : "GEL",
-    "piece" : "piece"
+    "piece" : "piece",
+    "hello" : "hello, ",
+    "clean" : "clean",
+    "dighomi" : "Didi dighomi, Mirian king #20",
+    "time" : "Monday - Saturday: 10:00 - 19:00",
+    "avlabari" : "Avlabari, Qetevan tsamebulis #2",
+    "acc-log" : "Login",
+    "logout" : "Logout"
 }

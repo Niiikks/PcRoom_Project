@@ -1,4 +1,5 @@
 let slide = document.querySelectorAll('.slide');
+let slide1 = document.querySelectorAll('.slide1');
 let product = 0;
 let sum = 0;
 
@@ -19,6 +20,22 @@ slide.forEach(element => {
         product++;
         let num = Number(event.target.previousElementSibling.textContent.split(' ')[0]);
         console.log(event.target.previousElementSibling.textContent)
+        sum += num;
+        document.cookie = `product=${product}; samesite=none; secure`;
+        document.cookie = `sum=${sum}; samesite=none; secure`;
+        document.getElementById('product').textContent = `${product}`;
+        document.getElementById('sum').textContent = `${sum}`;
+    })
+    element.appendChild(div);
+})
+
+slide1.forEach(element => {
+    let div = document.createElement('button');
+    div.id = "add-cart";
+    div.textContent = 'add to cart';
+    div.addEventListener('click', (event) => {
+        product++;
+        let num = Number(event.target.previousElementSibling.textContent.split(' ')[0]);
         sum += num;
         document.cookie = `product=${product}; samesite=none; secure`;
         document.cookie = `sum=${sum}; samesite=none; secure`;

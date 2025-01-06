@@ -1,7 +1,7 @@
 const usersDB = require('../models/users')
 const bcrypt = require('bcrypt');
 
-const registerController = async (req,res) => {
+const handleRegister = async (req,res) => {
     const {name,mail,country,city,phone,date,password} = req.body;
 
     if(!name || !mail || !country || !city || !phone || !date || !password) {
@@ -25,11 +25,11 @@ const registerController = async (req,res) => {
             date : date,
             password : hashedPwd
         })
-        return res.status(204).json({message : "new user has been created"})
+        res.status(200).json({message : "account registered succesfully"})
     }
     catch (err) {
         return res.status(500).json({message : err.message})
     }
 }
 
-module.exports = registerController;
+module.exports = handleRegister;

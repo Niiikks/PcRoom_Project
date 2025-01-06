@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="acc-reg">ანგარიშის რეგისტრაცია</title>
-    <link rel="stylesheet" href="registration.css">
+    <title data-i18n="acc-log">ავტორიზაცია</title>
+    <link rel="stylesheet" href="login.css">
     <link rel="icon" href="assetes/logo-on-black.png">
     <script src="https://kit.fontawesome.com/c36c3eebf5.js" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +16,7 @@
             <span id="infopcroom"><i class="fa fa-envelope-o" aria-hidden="true" id="mail-icon"></i><span data-i18n="email">Info@Pcroom.Ge</span></span>
         </div>
         <div id="sdiv">
-            <a href="https://www.youtube.com/" class="ftext" id="ganvadeba" data-i18n="online-financing">ონლაინ განვადება</a>
+            <a href="" class="ftext" id="ganvadeba" data-i18n="online-financing">ონლაინ განვადება</a>
             <a href="" class="ftext" id="miwodeba" data-i18n="delivery">მიწოდება</a>
             <div class="dropdown">
                 <button type="button" id="dropdown-btn" onclick="start()">
@@ -30,7 +30,7 @@
         </div>
     </nav>
     <header id="desktop-header">
-        <a href="index.html"><img src="assetes/logo-on-black.png" alt="" id="PcRoom-logo"></a>
+        <a href="http://localhost:3500/main"><img src="assetes/logo-on-black.png" alt="" id="PcRoom-logo"></a>
         <div id="right-header">
             <div id="search">
                 <input type="text" placeholder="რას ეძებთ?" name="" id="search-input" data-i18n="search-placeholder">
@@ -38,8 +38,8 @@
             </div>
             <div class="icondiv"><span class="icon user"></span>
                 <div id="user-div">
-                    <a href="" data-i18n="authorization">ავტორიზაცია</a>
-                    <a href="" data-i18n="registration">რეგისტრაცია</a>
+                    <a href="http://localhost:3500/loginPage" data-i18n="authorization">ავტორიზაცია</a>
+                    <a href="http://localhost:3500/registerPage" data-i18n="registration">რეგისტრაცია</a>
                 </div>
             </div>
             <div class="icondiv"><span class="icon cart"></span>
@@ -76,59 +76,20 @@
             <li><i class="fa fa-home"></i></li>
             <li data-i18n="account">ანგარიში</li>
             <li id="doted"></li>
-            <li data-i18n="registration">რეგისტრაცია</li>
+            <li data-i18n="acc-log">ავტორიზაცია</li>
         </ul>
     </div>
     <form>
-        <div class="acc-reg">
-            <div class="acc-reg" data-i18n="acc-reg">ანგარიშის რეგისტრაცია</div>
-            <span data-i18n="if-reg">თუ უკვე ხართ რეგისტრირებული, გთხოვთ, გაიაროთ <a href="">ავტორიზაცია.</a></span>
-        </div>
-        <div class="topics" data-i18n="personal-info">
-            თქვენი პირადი მონაცემები
-        </div>
         <div class="form">
             <label for="name" data-i18n="name">სახელი</label>
-            <input type="text" data-i18n="name" placeholder="სახელი">
+            <input type="text" data-i18n="name" placeholder="სახელი" id="name">
         </div>
         <div class="form">
-            <label for="gmail" data-i18n="gmail" >ელ-ფოსტა</label>
-            <input type="text" data-i18n="gmail" placeholder="ელ-ფოსტა" id="gmail">
-        </div>
-        <div id="error-div" data-i18n="error-div">გთხოვთ შეიყვანეთ ვალიდური ელ-ფოსტა.</div>
-        <div class="form">
-            <label for="country" data-i18n="country">ქვეყანა</label>
-            <input type="text" data-i18n="country" placeholder="ქვეყანა">
-        </div>
-        <div class="form">
-            <label for="city" data-i18n="city">ქალაქი</label>
-            <input type="text" data-i18n="city" placeholder="ქალაქი">
-        </div>
-        <div class="form">
-            <label for="phone" data-i18n="phone">მობილურის ნომერი</label>
-            <input type="text" data-i18n="phone" placeholder="მობილურის ნომერი" id="phone">
-        </div>
-        <div id="phone-err" data-i18n="phone-err">მობილურის ნომერი უნდა შეიცავდეს მხოლოდ 9 ციფრს და არცერთ space_ს</div>
-        <div class="form">
-            <label for="registration-date" data-i18n="registration-date">რეგისტრაციის თარიღი</label>
-            <input type="date">
-        </div>
-        <div class="topics" data-i18n="your-password">
-            თქვენი პაროლი
-        </div>
-        <div class="form">
-            <label for="password" data-i18n="password">პაროლი</label>
+            <label for="password" data-i18n="password" >პაროლი</label>
             <input type="password" data-i18n="password" placeholder="პაროლი" id="password">
         </div>
-        <div id="check-pwd"></div>
-        <div class="form">
-            <label for="confirm-password" data-i18n="confirm-password">დაადასტურე პაროლი</label>
-            <input type="password" data-i18n="confirm-password" placeholder="დაადასტურე პაროლი" id="confirm-password">
-        </div>
-        <div id="match-pwd" data-i18n="match-pwd">პაროლი არ ემთხვევა</div>
-        <div id="error-fill" data-i18n="error-fill">გთხოვთ შეავსოთ ყველა ველი</div>
         <div id="but">
-        <button type="button" data-i18n="continue" id="btn">გაგრძელება</button>
+            <button type="button" data-i18n="continue" id="btn" onclick="login()">გაგრძელება</button>
         </div>
     </form>
     <footer>
@@ -156,20 +117,20 @@
             <div id="footer-col-2-div1" class="footer-content">
                 <a href="">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                     დიდი დიღომი, მირიან მეფის #20 
+                    <span data-i18n="dighomi">დიდი დიღომი, მირიან მეფის #20</span>
                 <div>
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    ორშაბათი - შაბათი: 10:00 - 19:00 
+                    <span data-i18n="time">ორშაბათი - შაბათი: 10:00 - 19:00</span> 
                 </div>
                 </a>
             </div>
             <div id="footer-col-2-div2" class="footer-content">
                 <a href="">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    ავლაბარი, ქეთევან წამებულის #2  
+                    <span data-i18n="avlabari">ავლაბარი, ქეთევან წამებულის #2</span>  
                 <div>
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    ორშაბათი - შაბათი: 10:00 - 19:00  
+                    <span data-i18n="time">ორშაბათი - შაბათი: 10:00 - 19:00</span>  
                 </div>
                 </a>
             </div>
@@ -214,8 +175,8 @@
         </div>
     <script src="dropdown.js"></script>
     <script src="translate.js"></script>
-    <script src="reg_validation.js"></script>
     <script src="cartDisplay.js"></script>
+    <script src="login.js"></script>
     </footer>
 </body>
 </html>
