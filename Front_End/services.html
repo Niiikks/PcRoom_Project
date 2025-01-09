@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Room • პისი რუმი</title>
-    <link rel="stylesheet" href="style.css">
+    <title data-i18n="services">სერვისები</title>
+    <link rel="stylesheet" href="services.css">
     <link rel="icon" href="assetes/logo-on-black.png">
     <script src="https://kit.fontawesome.com/c36c3eebf5.js" crossorigin="anonymous"></script>
 </head>
@@ -51,7 +51,6 @@
                 </div>
             </div>
         </div>
-        <button id="clean" data-i18n="clean">გასუფთავება</button>
     </header>
     <!-- ===================================================== ტელეფონის header ================================================= -->
     <header id="phone-header">
@@ -68,140 +67,79 @@
     <div id="under-header">
         <div id="categories"><span data-i18n="categories">კატეგორიები</span><i class="fa fa-angle-down" ></i></div>
         <div id="menu">
-            <a href="" data-i18n="home">მთავარი</a>
+            <a href="http://localhost:3500/main" data-i18n="home">მთავარი</a>
             <a href="sales.html" data-i18n="discounts">ფასდაკლებები</a>
             <a href="main-info.html" data-i18n="about-us">ძირითადი ინფორმაცია</a>
             <a href="services.html" data-i18n="services">სერვისები</a>
             <a href="contact.html" data-i18n="contact">კონტაქტი</a>
         </div>
     </div>
-    <div id="banner"><img src="assetes/ny-pc-669773-7680-1256x540.jpg" alt=""></div>
+    <div id="main">
+        <ul>
+            <li><i class="fa fa-home"></i></li>
+            <li data-i18n="services">სერვისები</li>
+        </ul>
+    </div>
     <section>
-        <div id="slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="assetes/1-8535-35-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">50.0 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/1-910644-5765-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">68.0 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/2-2821-47-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">100.0 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/2-308454-3938-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">17.50 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide">
-                    <img src="assetes/p1659_0-256x256.png" alt="" srcset="">
-                    <div id="description" data-i18n="memory-description">მეხსიერება - Micro SD Card Goodram 256 GB + Adapter</div>
-                    <div id="price">150.50 <span data-i18n="gel">ლ</span></div>
-                </div>
-            </div>
+        <div class="cont">
+            <img src="assetes/services1.png" alt="">
+            <div class="cont-text" data-i18n="text1">კომპიუტერის გაწმენდა + კაბელ მენეჯმენტი + თერმოპასტის შეცვლა </div>
+            <div class="prc">90.00<span data-i18n="gel">ლ</span></div>
         </div>
-        <div id="controls">
-            <button id="prev" type="button" class="btn"><img src="assetes/back.png" alt=""></button>
-            <button id="next" type="button" class="btn"><img src="assetes/next.png" alt=""></button>
+        <div class="cont">
+            <img src="assetes/services2.png" alt="">
+            <div class="cont-text" data-i18n="text2">კომპიუტერის გაწმენდა + კაბელ მენეჯმენტი </div>
+            <div class="prc">60.00<span data-i18n="gel">ლ</span></div>
         </div>
-    </section>
-
-    <section id="section1">
-        <div id="slider1">
-            <div class="slides">
-                <div class="slide1">
-                    <img src="assetes/slide1.png" alt="">
-                    <div class="desc">დედაბარათი - Asrock Z690 Steel Legend DDR4 </div>
-                    <div class="prc">2910.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide2.png" alt="">
-                    <div class="desc">ნოუთბუქი - Acer Predator Triton 500 SE - 16 Inch / IPS / i7 11800H / 16GB D4 / 1TB / RTX 3060 6GB </div>
-                    <div class="prc">5694.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide3.png" alt="">
-                    <div class="desc">დედაბარათი - Asrock Z690 Steel Legend DDR4 </div>
-                    <div class="prc">2680.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide4.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">4256.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide5.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">156.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide6.png" alt="">
-                    <div class="desc">ნოუთბუქი - Acer Predator Triton 500 SE - 16 Inch / IPS / i7 11800H / 16GB D4 / 1TB / RTX 3060 6GB </div>
-                    <div class="prc">55.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide7.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">69.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide8.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">365.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-            </div>
+        <div class="cont">
+            <img src="assetes/services3.png" alt="">
+            <div class="cont-text" data-i18n="text3">ქეისის გადაწყობა / კაბელ მენეჯმენტი</div>
+            <div class="prc">30.00<span data-i18n="gel">ლ</span></div>
         </div>
-    </section>
-    <section id="section1">
-        <div id="slider1">
-            <div class="slides">
-                <div class="slide1">
-                    <img src="assetes/slide1.png" alt="">
-                    <div class="desc">დედაბარათი - Asrock Z690 Steel Legend DDR4 </div>
-                    <div class="prc">2910.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide2.png" alt="">
-                    <div class="desc">ნოუთბუქი - Acer Predator Triton 500 SE - 16 Inch / IPS / i7 11800H / 16GB D4 / 1TB / RTX 3060 6GB </div>
-                    <div class="prc">2680.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide3.png" alt="">
-                    <div class="desc">დედაბარათი - Asrock Z690 Steel Legend DDR4 </div>
-                    <div class="prc">4256.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide4.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">156.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide5.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">2680.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide6.png" alt="">
-                    <div class="desc">ნოუთბუქი - Acer Predator Triton 500 SE - 16 Inch / IPS / i7 11800H / 16GB D4 / 1TB / RTX 3060 6GB </div>
-                    <div class="prc">365.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide7.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">156.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-                <div class="slide1">
-                    <img src="assetes/slide8.png" alt="">
-                    <div class="desc">Riser PCI-E PCI Express Riser 1X to 16X USB 3.0 PCE164P-N09 VER012</div>
-                    <div class="prc">5694.00 <span data-i18n="gel">ლ</span></div>
-                </div>
-            </div>
+        <div class="cont">
+            <img src="assetes/services4.png" alt="">
+            <div class="cont-text" data-i18n="text4">კომპიუტერის გაწმენდა</div>
+            <div class="prc">20.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services5.png" alt="">
+            <div class="cont-text" data-i18n="text5">ნოუთბუქის გაწმენდა </div>
+            <div class="prc">30.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services6.png" alt="">
+            <div class="cont-text" data-i18n="text6">თერმოპასტის შეცვლა პროცესორზე </div>
+            <div class="prc">30.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services7.png" alt="">
+            <div class="cont-text" data-i18n="text7">თერმოპასტის შეცვლა ნოუთბუქზე </div>
+            <div class="prc">50.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services8.png" alt="">
+            <div class="cont-text" data-i18n="text8">თერმოპასტის შეცვლა ვიდეობარათზე </div>
+            <div class="prc">35.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services9.png" alt="">
+            <div class="cont-text" data-i18n="text9">კომპიუტერის ცალკეული ნაწილის დიაგნოსტიკა </div>
+            <div class="prc">10.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services10.png" alt="">
+            <div class="cont-text" data-i18n="text10">კომპიუტერში / ნოუთბუქში დეტალის შეცვლა </div>
+            <div class="prc">15.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services11.png" alt="">
+            <div class="cont-text" data-i18n="text11">ინტერნეტის კაბელის დაჯეკვა </div>
+            <div class="prc">3.00<span data-i18n="gel">ლ</span></div>
+        </div>
+        <div class="cont">
+            <img src="assetes/services12.png" alt="">
+            <div class="cont-text" data-i18n="text12">კომპიუტერის / ნოუთბუქის დიაგნოსტიკა </div>
+            <div class="prc">35.00<span data-i18n="gel">ლ</span></div>
         </div>
     </section>
     <footer>
@@ -285,11 +223,10 @@
                 <li data-i18n="report-error">შეცდომის დაფიქსირება</li>
             </ul>
         </div>
-    </footer>
-    <script src="hello.js"></script>
-    <script src="translate.js"></script>
     <script src="dropdown.js"></script>
-    <script src="script.js"></script>
-    <script src="addFunction.js"></script>
+    <script src="translate.js"></script>
+    <script src="cartDisplay.js"></script>
+    <script src="hello.js"></script>
+    </footer>
 </body>
 </html>

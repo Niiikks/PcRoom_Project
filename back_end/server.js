@@ -35,6 +35,7 @@ app.use(express.static("../Front_End"));
 
 app.use('/register', require('./routes/register'))
 app.use('/login', require('./routes/login'))
+app.use('/refresh', require('./routes/refresh'));
 app.use('/loginPage', (req,res) => {
     res.sendFile(path.join(__dirname, '../Front_End/login.html'));
 })
@@ -43,6 +44,9 @@ app.use('/registerPage', (req,res) => {
 })
 app.use('/main', (req,res) => {
     res.sendFile(path.join(__dirname, '../Front_End/index.html'));
+})
+app.use('/login', (req,res) => {
+    res.sendFile(path.join(__dirname, '../Front_End/login.html'));
 })
 
 app.use(verifyJWT);

@@ -30,7 +30,7 @@ const handleLogin = async (req,res) => {
                 }
             },
             process.env.ACCESS_TOKEN,
-            {expiresIn : '15m'}
+            {expiresIn : '30s'}
         )
 
         const refreshToken = await jwt.sign(

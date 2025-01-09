@@ -1,7 +1,7 @@
 {
     "phone-number": "+995 555 888 884",
     "email": "Info@Pcroom.Ge",
-    "online-financing": "Online installment",
+    "online-financing": "Online Credit",
     "delivery": "Delivery",
     "search-placeholder": "What are you looking for?",
     "search": "Search",
@@ -54,5 +54,31 @@
     "time" : "Monday - Saturday: 10:00 - 19:00",
     "avlabari" : "Avlabari, Qetevan tsamebulis #2",
     "acc-log" : "Login",
-    "logout" : "Logout"
-}
+    "logout" : "Logout",
+    "saled-prod" : "Saled product",
+    "text1" : "Cleaning The Computer + Cable management + Change Thermal Paste ",
+    "text2" : "Cleaning The Computer + Cable management ",
+    "text3" : "Case Re-building Service/ Cable Management ",
+    "text4" : "Cleaning The Computer ",
+    "text5" : "Cleaning The Laptop ",
+    "text6" : "Changing The Thermal Paste On The Cpu ",
+    "text7" : "Changing The Thermal Paste On The Laptop ",
+    "text8" : "Changing The Thermal Paste On The Video Card ",
+    "text9" : "Separate PC Part Diagnostics ",
+    "text10" : "Changing A Detail On A PC/ Laptop ",
+    "text11" : "Cabling An Ethernet Jack ",
+    "text12" : "Computer/ Laptop Diagnostics ",
+    "main-info" : "Main Info",
+    "sales" : "Sales",
+    "about-us-1" : "PC Room has been operating in the computer hardware market for 17 years",
+    "about-us-2" : "We are official partners of leading brands",
+    "about-us-3" : "Our company offers",
+    "about-us-4" : "The largest selection of computer hardware",
+    "about-us-5" : "Low prices",
+    "about-us-6" : "Complete service",
+    "about-us-7" : "Fast warranty service",
+    "about-us-8" : "Convenient delivery service",
+    "dighomi-header" : "Didi Dighomi:",
+    "avalabari-header" : "Avalabari:"
+
+ }
