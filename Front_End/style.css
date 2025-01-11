@@ -146,8 +146,8 @@ body {
 }
 
 #desktop-header {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 68px;
+    padding-right: 68px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -445,10 +445,9 @@ section {
 
 @keyframes slide-animation {
     0% {transform: translateX(-0%);}
-    20% { transform: translateX(-100%); }
-    40% { transform: translateX(-206.88%); }
-    60% { transform: translateX(-315.88%); }
-    80% { transform: translateX(-425.88%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-210.88%); }
+    75% { transform: translateX(-317.88%); }
     100% { transform: translateX(-0%); }
 }
 
@@ -476,8 +475,8 @@ footer {
     font-weight: 400;
     font-family: "FiraGo";
     letter-spacing: 0.7px;
-    justify-content: space-evenly;
-    height: 470px;
+    justify-content: center;
+    height: 380px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 40px;
@@ -547,9 +546,7 @@ h5 {
 /* მეორე ყუთი Footer_ში */
 #footer-col-2 {
     border-right: 1px solid #333333;
-    padding-top: 30px;
-    padding-right: 15px;
-    max-width: 320px;
+    padding: 30px 30px 0 30px;
 }
 
 #footer-col-2 a {
@@ -631,7 +628,6 @@ li:hover {
 #footer-col-5 {
     padding-top: 30px;
     padding-right: 15px;
-    max-width: 200px;
     line-height: 35px;
 }
 
@@ -645,7 +641,6 @@ li:hover {
     width: 100%;
     border-radius: 15px;
 }
-
 #add-cart{margin-top: 10px;
     font-family: 'FiraGo';
     color: white;
